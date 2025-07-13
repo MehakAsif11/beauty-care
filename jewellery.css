@@ -1,0 +1,489 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.width{ 
+    width: 100%;
+    height: 30%;
+    background-color:wheat; 
+}
+html,body{
+width: 100%;
+height: 100%;
+}
+.nav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width:100% ;
+    height: 6%;
+    background-color: black;
+    color: crimson;
+      /* text-align: center; */
+      font-size: 2.5vw;
+    display: flex;
+    justify-content: space-around;
+border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;   
+}
+.navbar1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width:100% ;
+    height: 6%;
+    background-color: black;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    font-size: 2.5vw;
+    color: crimson;
+    display: flex;
+    justify-content: space-around;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+
+}  
+#navbar{
+    margin-top: 3%;    
+            /* background-color: black; */
+            position: fixed;
+            width: 92%;
+           margin-left: 4%;
+            height: 10%;
+            
+            }
+   
+a{
+    /* position: fixed; */
+    flex-direction: column;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* margin: 4%; */
+            font-size:1.3vw;
+            position: relative;
+            text-decoration: none;
+            /* padding-top: 3%; */
+            color: crimson;
+            height: 100%;
+           width: 10vw;
+            /* display: inline; */
+            /* z-index: 1000; */
+            justify-content: space-around;
+            align-items: center;
+          display: flex;
+            overflow: hidden;
+            /* z-index: 1; */
+        }
+     a:hover{
+            border-radius: 10%;
+            transition-delay:0s,1s ;
+            color:wheat;
+            box-shadow: 
+            0 0 10px black,
+            0 0 70px black,
+            0 0 100px black,
+            0 0 160px black,
+            0 0 200px black;
+        }
+  a::before{
+            content: "";
+            position: absolute;
+            top:0 ;
+            left: 10px;
+            right: -10px;
+        width: 0;
+        height: 100%;
+        transition: 1s;
+        transform: skewX(35deg);
+        background-color: black;
+        z-index: -1;
+        }
+  a:hover:before{
+            width: 100%;
+        } 
+
+        /* .navbar ul, .navbar li{
+            display: flex;
+            margin: ;
+            padding: 0;
+              }  */
+              #navbar ul{
+                /* flex-direction: column; */
+                display: flex;
+                list-style: none;
+                width: 100%;
+                /* background: gray; */
+              }
+              #navbar li{
+                /* display: flex; */
+                flex-direction: row;
+                /* flex-direction: column; */
+                float: left;
+                position: relative;
+                width: auto;
+              }
+           a{
+flex-direction: column;
+             
+          padding: 15px;
+
+            overflow: hidden;
+                 
+                }
+                #navbar li:hover a{
+                    /* background-color: aquamarine; */
+                }
+                #sub{
+                    
+                    background-color: burlywood;
+                    flex-direction: column;
+                    left: 0;
+                    opacity: 0;
+                    position: absolute;
+                    top: 5px;
+                    visibility: hidden;
+                    z-index: 100;
+                }
+                li:hover ul#sub{
+                    opacity: 1;
+                    top:3.2rem ;
+                    visibility: visible;
+                }
+
+
+
+        h2{
+            padding-top: 6%;
+            font-size: 3rem;
+        }
+       /* #navbar #active{
+            color: red;
+            width: 12px;
+            height: 20%;
+        }
+       #active a:hover{
+            width: 50%;
+            height: 60%;
+            color: red;
+        } */
+img{
+   display: inline;
+   margin-left: 2%;
+   justify-content: space-around; 
+   align-items: center;
+}
+
+   
+    
+   */
+/* h3{
+    width:60% ;
+    height: 20%;
+    padding-top: 3%;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+    background-color: crimson;
+margin-left: 20%;
+} */
+
+
+
+.container1-fluid{
+    width: 100%;
+    height: 70%;
+    background-color:black;
+   /* color:rgb(255, 185, 93); */
+   color: crimson;
+}
+.footer{
+    background-color: black;
+    color: crimson;
+    /* padding-top: 5%; */
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.footer a{
+   /* padding-top: 6%; */
+    /* color:rgb(255, 185, 93); */
+    color: crimson;
+}
+
+.f-about a{
+    font-size: small;
+    margin: 2%;
+}
+.f-shop h2{
+    font-size: 1.5rem;
+    /* font-size: 3rem; */
+    margin-left: 24%;
+}
+
+.atag{
+    background-color: black;
+}
+.atag h2{
+   font-size: 2rem;
+    color: crimson;
+    background-color: black;
+}
+.atag a{
+    /* color:rgb(255, 185, 93) ; */
+    color: crimson;
+    padding-top: 4%;
+    background-color: black;
+     align-items: center;
+    display: inline-flex;
+    justify-content: space-around;
+    z-index: -1;
+}
+a ion-icon{
+  padding-bottom: 30%;
+  /* z-index: -1; */
+}
+.p p{
+padding-top: 5%;
+display: flex;
+background-color: black;
+color: crimson;
+justify-content:center;
+align-items:center ;
+}
+ion-icon:hover{
+    width: 35%;
+    height: 20%;
+    /* background-color:rgb(255, 185, 93) ; */
+    /* color: wheat; */
+    color:crimson;
+}
+  
+    h5{
+        font-size: 3vw;
+        padding-top: 5%;
+        margin-left: 2%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:black;
+    }
+    
+        #set span{
+            display: flex;
+            align-items: center;
+            margin-left: 5%;
+            justify-content: space-around;
+            font-size: large;
+        }
+h6{
+    font-size:large;
+    padding-top: 9%;
+   
+}
+h6:hover{
+width: 30%;
+height: 10vh;
+background-color: white;
+color: black;
+}
+.container span{
+font-size: 2vw;
+justify-content: center;
+display: flex;
+align-items: center;
+}
+h4{
+    font-size: 3.5vw;
+    float: right;
+    display: flex;
+    padding-bottom: 
+    10%;
+    margin-left: 0%;
+    padding-top: 10%;
+    /* color: red; */
+}
+.video{
+    margin: 3%;
+    padding-top: 3%;
+}
+h3{
+    padding-top: 4%;
+    display: flex;
+    justify-content: space-around;
+    color: crimson;
+}
+
+
+
+  /* #set{
+    width: 100%;
+    height: 70%; 
+    display: flex;
+    flex-wrap: wrap;
+     display: inline-block; 
+    align-items: center;
+    background-color: black;
+    }
+    #set div{
+         display: table-column; 
+        padding-top: 2%;
+        margin: 3%;
+        color:wheat;
+        width:16rem;
+        height: 45%;
+        border: 1px solid black;
+        }
+    #set div img{
+        display: table-column;
+            width: 20vw;
+            height: 40vh;
+        }   */
+
+
+        #set{
+            /* width: 100%;
+            height: 70%; */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: black;
+        }
+        #set div{
+            margin-left: 2%;
+            padding-top: 2%;
+            margin: 3%;
+            color:wheat;
+            width:16rem;
+            height: 60%;
+            border: 1px solid black;
+            }
+        #set div img{
+                width: 40vh;
+                height: 40vh;
+            } 
+
+
+
+        @media  (min-width:300px)and (max-width: 600px){
+            .nav{
+                height:3vh ;
+                font-size: 3.5vw;
+                width:100% ;
+            }
+            .navbar1{
+                height: 3vh;
+                font-size: 3.5vw;
+                width: 100%;
+            }
+            #navbar a{
+            padding-top: 0%;
+            font-size: 3vw;
+            width: 100%;
+            align-items: center;
+            /* gap: 4%; */
+            display: flex;
+            }
+
+        #set {
+            flex-direction: column;
+        }
+
+        #set div{
+            margin-left: 0%;
+            margin-right: 0%;
+            width: 15rem;
+            /* height: 10rem; */
+        }
+        #set div img{
+width: 60vw;
+height: 25vh;
+        }
+        h2{
+            font-size: 3.8vw;
+        }
+h5{
+font-size: 3rem;
+}
+span{
+    font-size: 2vw;
+}
+h6{
+    font-size: 4vw;
+}
+.video video{
+    width: 32.2%;
+    height: 10%;
+}
+.container img{
+    width: 45%;
+    height: 15%;
+}
+.container h4{
+    padding-bottom: 20%;
+/* margin-right: 45%; */
+    font-size: 4vw;
+}
+/*   */
+/* #set{
+    display: flex;
+    width: 65%;
+    height: 40%;
+}
+#set img{
+    display: flex;
+    width: 60%;
+    height: 10%;
+    object-fit: cover;
+}
+#set span{
+    font-size: 1.5vw;
+}
+#set h6{
+    font-size: 1.5vw;
+} */
+.container1 img{
+    width: 55%;
+}
+.container span{
+        font-size: 3.9vw;
+        word-break: 2%;
+        width: 50%;
+      }     
+      .container1-fluid{
+        width:100%;
+    }
+    .container h5{
+        font-size: 7vw;
+    }
+    .p p{
+           
+        font-size:0.6rem;
+        /* height: 0%; */
+     }
+     .f-about{
+        font-size: 0.8rem;
+             }
+             
+            .f-shop h2{
+                margin-left: 1.8%;
+                font-size: 0.8rem;
+                /* align-items: center;
+                display: flex; */
+                margin-right: 10%;
+             }
+            .f-shop a{
+                font-size: 0.6rem;
+            }
+    
+         .atag h2{
+    font-size: 0.8rem;
+         }
+    
+         .f-about a{
+             font-size: 5px;
+         }
+         .HELP a{
+             font-size: 7px;
+          }
+    
+         .atag a{
+             font-size: 55%;
+         }
+        }

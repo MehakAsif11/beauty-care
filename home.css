@@ -1,0 +1,618 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h5{
+    font-size: 3vw;
+    padding-top: 5%;
+    line-height: 20vh;
+    margin-left: 2%;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+    color:black;
+   
+  ;
+}
+html,body{
+width: 100%;
+height: 100%;
+}
+
+.nav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width:100% ;
+    height: 6%;
+    background-color: black;
+    color:crimson;
+      /* text-align: center; */
+      font-size: 2.5vw;
+    display: flex;
+    justify-content: space-around;
+border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;   
+}
+.navbar1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width:100% ;
+    height: 6%;
+    background-color: black;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    font-size: 2.5vw;
+    color: crimson;
+    display: flex;
+    justify-content: space-around;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+
+}  
+#navbar{
+    margin-top: 3%;    
+            /* background-color: black; */
+            position: fixed;
+            width: 92%;
+           margin-left: 4%;
+            height: 10%;
+            
+            }
+   
+a{
+    flex-direction: column;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* margin: 4%; */
+            font-size:1.3vw;
+            position: relative;
+            text-decoration: none;
+            /* padding-top: 3%; */
+            color:crimson;
+            height: 100%;
+           width: 10vw;
+            /* display: inline; */
+            z-index: 1;
+            justify-content: space-around;
+            align-items: center;
+          display: flex;
+            overflow: hidden;
+            /* z-index: 1000; */
+        }
+     a:hover{
+            border-radius: 10%;
+            transition-delay:0s,1s ;
+            color:wheat;
+            box-shadow: 
+            0 0 10px black,
+            0 0 70px black,
+            0 0 100px black,
+            0 0 160px black,
+            0 0 200px black;
+        }
+  a::before{
+            content: "";
+            position: absolute;
+            top:0 ;
+            left: 10px;
+            right: -10px;
+        width: 0;
+        height: 100%;
+        transition: 1s;
+        transform: skewX(35deg);
+        background-color: black;
+        z-index: -1;
+        }
+  a:hover:before{
+            width: 100%;
+        } 
+
+        /* .navbar ul, .navbar li{
+            display: flex;
+            margin: ;
+            padding: 0;
+              }  */
+              #navbar ul{
+                /* flex-direction: column; */
+                display: flex;
+                list-style: none;
+                width: 100%;
+                /* background: gray; */
+              }
+              #navbar li{
+                /* display: flex; */
+                flex-direction: row;
+                /* flex-direction: column; */
+                float: left;
+                position: relative;
+                width: auto;
+              }
+           a{
+flex-direction: column;
+             
+          padding: 15px;
+
+            overflow: hidden;
+                 
+                }
+                #navbar li:hover a{
+                    /* background-color: aquamarine; */
+                }
+                #sub{
+                    background-color: burlywood;
+                    flex-direction: column;
+                    left: 0;
+                    opacity: 0;
+                    position: absolute;
+                    top: 5px;
+                    visibility: hidden;
+                    z-index: 1;
+                }
+                li:hover ul#sub{
+                    opacity: 1;
+                    top:3.2rem;
+                    visibility: visible;
+                }
+/* #animation{
+   float: right;
+    height: 50vh;
+    width: 50vw;
+    background:wheat;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+    animation-name: anime;
+animation-duration: calc(3s);
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+.animation1{
+    float: right;
+    height: 50vh;
+    width: 50vw;
+    background:wheat;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+    animation-name: anime1;
+    animation-duration: calc(2s);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.animation2{
+    float: right;
+    display: flex;
+    height: 50vh;
+    width: 50vw;
+   background-color:wheat;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+animation-name: anime2;
+animation-duration: calc(5s);
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+@keyframes anime{
+    from{
+        transform: translate(-20%,30%);
+    }
+    to{
+        transform: translate(15%,-30%);   
+    }
+}
+@keyframes anime1{
+    from{
+        transform: translate(-10%,10%);
+    }
+    to{
+        transform: translate(10%,-10%);   
+    }
+}
+@keyframes anime2{
+    from{
+        transform: translate(-10%,10%);
+    }
+    to{
+        transform: translate(10%,-10%);   
+    }
+}
+
+#ani3{
+    float: left;
+     height: 50vh;
+     width: 50vw;
+     background:wheat;
+     border-radius: 50%;
+     filter: blur(20px);
+     position: absolute;
+     animation-name: ani3;
+ animation-duration: calc(3s);
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+ }
+ .ani4{
+     float: left;
+     height: 50vh;
+     width: 50vw;
+     background:wheat;
+     border-radius: 50%;
+     filter: blur(20px);
+     position: absolute;
+     animation-name: ani4;
+     animation-duration: calc(2s);
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+ }
+ .ani5{
+     float: left;
+     display: flex;
+     height: 50vh;
+     width: 50vw;
+    background-color:wheat;
+     border-radius: 50%;
+     filter: blur(20px);
+     position: absolute;
+ animation-name: ani5;
+ animation-duration: calc(5s);
+ animation-timing-function:linear;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+ }
+ @keyframes ani3{
+     from{
+         transform: translate(30%,-20%);
+     }
+     to{
+         transform: translate(-35%,10%);   
+     }
+ }
+ @keyframes ani4{
+     from{
+         transform: translate(10%,-10%);
+     }
+     to{
+         transform: translate(-10%,10%);   
+     }
+ }
+ @keyframes ani5{
+     from{
+         transform: translate(-10%,10%);
+     }
+     to{
+         transform: translate(10%,-10%);   
+     }
+ } */
+ /* #ani6{
+    float: left;
+     height: 50vh;
+     width: 50vw;
+     background:wheat;
+     border-radius: 50%;
+     filter: blur(20px);
+     position: absolute;
+     animation-name: ani3;
+ animation-duration: calc(3s);
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+ }
+ .ani7{
+     float: left;
+     height: 50vh;
+     width: 50vw;
+     background:wheat;
+     border-radius: 50%;
+     filter: blur(20px);
+     position: absolute;
+     animation-name: ani4;
+     animation-duration: calc(2s);
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+ }
+ .ani8{
+     float: left;
+     display: flex;
+     height: 50vh;
+     width: 50vw;
+    background-color:wheat;
+     border-radius: 50%;
+     filter: blur(20px);
+     position: absolute;
+ animation-name: ani5;
+ animation-duration: calc(5s);
+ animation-timing-function:linear;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+ } */
+ /* @keyframes ani6{
+     from{
+         transform: translate(30%,-20%);
+     }
+     to{
+         transform: translate(-35%,10%);   
+     }
+ }
+ @keyframes ani7{
+     from{
+         transform: translate(10%,-10%);
+     }
+     to{
+         transform: translate(-10%,10%);   
+     }
+ }
+ @keyframes ani8{
+     from{
+         transform: translate(-10%,10%);
+     }
+     to{
+         transform: translate(10%,-10%);   
+     }
+ } */
+/* .container-fluid{
+   padding-top: 3%;
+   width: 100%;
+   height: 70%;
+} */
+.full video{
+    margin-left: 12%;
+    padding-top: 1%;
+    /* height: 0%;
+    width: 100%; */
+    /* background-color: crimson; */
+}
+.full img{
+    /* background-color: crimson; */
+    width: 20%;
+    padding-top: 6%;
+    /* float: right;
+    display: flex; */
+    /* mix-blend-mode:exclusion? ; */
+}
+/* .full p{
+float: right;
+display: flex;
+} */
+.img{
+    /* background-color: black; */
+    /* display:inline-flex ; */
+    display: flex;
+}
+.img img{
+    display: flex;
+    /* padding-top:1%; */
+   width: 20%;
+   /* margin: 2%; */
+   margin-left: 4%;
+   display: inline-block;
+   justify-content: space-around;
+  
+  height: 40%;
+ 
+  /* border: 1px solid black; */
+} 
+/* img{
+    padding-top: 4%;
+ width: 60%;
+} */
+h1{
+    float:left;
+    font-size: 9vw;
+line-height:20.6vh;
+color:wheat;
+background-color:black;
+width: 50%;
+}
+/* h2{
+    font-size: vw;
+    line-height: 7vh;
+   margin-left: 4%;
+    color:rgb(255, 185, 93);
+   
+} */
+marquee{
+    mix-blend-mode: multiply;
+   
+
+}
+marquee img{
+width: 16rem;
+height: 15rem;
+border: 1px solid black;
+
+}
+span{
+    /* align-items: center; */
+    display: flex;
+    /* justify-content: space-around; */
+    font-size: larger;
+
+    float: left;
+  
+}
+/* p{
+   
+    font-size: 2vw;
+    float: right;
+    display: inline-flex;
+    
+    margin: 4;
+   
+}  */
+.container img{
+    display: inline-flex;
+}
+.container-fluid img{
+    margin-left: 3%;
+}
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+    font-size: 1.5vw;
+}
+.container1-fluid{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 70%;
+    background-color:black;
+   color:crimson;
+}
+.footer{
+    /* padding-top: 5%; */
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.HELP{
+    padding-top: %;
+}
+.f-about a{
+    font-size: small;
+    margin: 2%;
+}
+.footer a{
+   padding-top: 4%;
+    color:crimson;
+}
+.f-shop h2{
+    margin-left: 23%;
+}
+.about h2{
+    margin-left: 4%;
+}
+.atag{
+    color: crimson;
+    background-color: black;
+    }
+.atag a{
+    /* color:rgb(255, 185, 93) ; */
+    color: crimson;
+    padding-top: 4%;
+    background-color: black;
+     align-items: center;
+    display: inline-flex;
+    justify-content: space-around;
+    z-index: -1;
+}
+a ion-icon{
+  padding-bottom: 30%;
+  /* z-index: -1; */
+}
+
+.p p{
+padding-top: 5%;
+display: flex;
+justify-content:center;
+align-items:center ;
+font-size: larger;
+}
+ion-icon:hover{
+    width: 35%;
+    height: 20%;
+    /* background-color:rgb(255, 185, 93) ; */
+    color: crimson;
+}
+
+
+@media  (min-width:200px)and (max-width: 600px){
+
+    .nav{
+        height:3vh ;
+        font-size: 3.5vw;
+        width:100% ;
+    }
+    .navbar1{
+        height: 3vh;
+        font-size: 3.5vw;
+        width: 100%;
+    }
+    #navbar a{
+        margin-right: 6%;
+    /* padding-top: 0%; */
+    font-size: 2.9vw;
+    width: 100%;
+    /* align-items: center; */
+    /* gap: 4%; */
+    display: flex;
+    }
+
+video{
+    width:100%;
+}
+.container img{
+    height: 10%;
+    width: 300px;
+}
+.container span{
+    width: 100%;
+}
+.container-fluid img{
+    max-width: 65%;
+    width: 20%;
+    height: 5%;
+}
+img{
+    height: 10%;
+    width: 40%;
+}
+img{
+    height: 10%;
+    width: 40%;
+}
+
+.container img{
+    /* width: 100%; */
+width: 20%;
+height: 7%;
+}
+.container1-fluid{
+    width: 100%;
+}
+.p h3{
+       
+    font-size:2vw;
+    height: 0%;
+ }
+     .f-about{
+        font-size: 0.8rem;
+             }
+             
+            .f-shop h2{
+                margin-left: 1.8%;
+                font-size: 0.8rem;
+                /* align-items: center;
+                display: flex; */
+                margin-right: 10%;
+             }
+            .f-shop a{
+                font-size: 0.6rem;
+            }
+     .atag h2{
+font-size: 3vw;
+     }
+
+    
+
+     .atag a{
+
+         font-size: 55%;
+     }
+     .p h3{
+        font-size: 0.6rem;
+     }
+  
+   
+    marquee img{
+        width: 15%;
+        height: 15%;
+    }
+    
+
+}
